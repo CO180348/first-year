@@ -1,0 +1,439 @@
+include<stdio.h>
+int j=0;
+int main()
+{
+	char c;
+	int n=0;
+	printf("WELCOME TO KBC\nLET US BEGIN WITH THE GAME\nYOU CAN USE 4 LIFELINES ONLY\nSO USE THEM CAREFULLY!\n");
+	for(int i=0;i<=15;i++)
+	{
+
+		n=0;
+		switch(i)
+		{
+			case 1:
+				
+				printf("What does the R in RSS stand for?\n");
+				printf("1.Rashtriya\t2.Rajkiya\t3.Rajya\t4.Rajniti\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						j=life1();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==1)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 2:
+				
+				printf("Who has been appointed the new Prime Minister of Romania\n");
+				printf("1.Sorin Grindaneu\t2.Klaus Lohannis\t3.Viorica Dancila\t4.Mihai Tudose\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						j=life2();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==3)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 3 :
+				
+				printf("In which country, the world's first daily driverless bus service has started?\n");
+				printf("1.China\t2.US\t3.Japan\t4.France\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life3();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==4)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 4:
+				
+				printf("In 1992, who beame the first sportsperson to be honoured with the Rajiv Gandhi Khel Ratna Award?\n");
+				printf("1.Vishwanathan Anand\t2.Sachin Tendulkar\t3.Geet Sidhu\t4.Leander Paes\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life4();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==1)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 5:
+				
+				printf("From which country did India buy an aircraft which was later named as INS Vikramaditya?\n");
+				printf("1.France\t2.Russia\t3.England\t4.Germany\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life5();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==2)
+					printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 6:
+				
+				printf("Which Indian Navy vessel carrying all-women crew circumnavigated the globe in 8 months and returned to india in May 2018\n");
+				printf("1.INSV Tarini\t2.INSV Mhadei\t3.INSV Sukanya\t4.INSV Tarangini\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life6();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==1)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 7:
+				
+				printf("Who invented the BALLPOINT PEN?\n");
+				printf("1.Biro Brothers\t2.Waterman Brothers\t3.Bicc Brothers\t4.Wright Brothers\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life7();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==1)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 8:
+				
+				printf("Which of the following is not a book by Munshi Premchand?\n");
+				printf("1.Gaban\t2.Godan\t3.Guide\t4.Manasarovar\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life8();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==3)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 9:
+				
+				printf("The famous Dilwara Temples are situated in\n");
+				printf("1.Uttar Pradesh\t2.Rajasthan\t3.Maharashtra\t4.Madhya Pradesh\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life9();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==2)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 10:
+				
+				printf("Which of the following is not a chief organ of UNO? \n");
+				printf("1.International Labour Organisation\t2.Security Council\t3.ICJ\t4.General Assembly\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life10();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==1)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 11:
+				
+				printf("The Rowlatt Act was passed in:\n");
+				printf("1.1905\t2.1913\t3.1919\t4.1925\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life11();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==3)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 12:
+				
+				printf("Electric bulb filament is made of\n");
+				printf("1.Copper\t2.Aluminium\t3.Lead\t4.Tungsten\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life12();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==4)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 13:
+				
+				printf("Which of the following non metal remains liquid at room temperature\n");
+				printf("1.Phosphorous\t2.Bromine\t3.Chlorine\t4.Helium\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life13();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==2)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 14:
+				
+				printf("The Hwang Ho river falls into \n");
+				printf("1.Indian Ocean\t2.Yellow Sea\t3.Red Sea\t4.Bay of China\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life14();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==2)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+			case 15:
+				
+				printf("What is Baking Soda?\n");
+				printf("1.Potassium Chloride\t2.Potassium Carbonate\t3.Potassium Hydroxide\t4.Sodium bicarbonate\n");
+				printf("do you want a lifeline?\nenter Y for yes and N for no");
+				scanf("%c",&c);
+				if(c=='Y'||c=='y')
+				{
+					if(j<=4)
+						life15();
+					else
+						printf("\nyou have already used 4 lifelines\n");
+				}
+				printf("enter you choice");
+				scanf("%d",&n);
+				if(n==4)
+				printf("\nthe answer is right\n");
+				else
+				{
+					printf("\nthe answer is wrong\ngame over\n");
+					i=16;
+				}
+				break;
+
+			
+		}
+	}
+	printf("game ends");
+}
+int life1()
+{
+	printf("\nRSS is a social movement founded in the 1920's to promote Hindu community, overcome caste divsions and Muslim separation\n");
+	j++;
+}
+int life2()
+{
+	printf("\nThe new PM of Romania is the country's first female premier\n");
+	j++;
+}
+void life3()
+{
+	printf("\nThe national motto of this country is 'liberty,equality and fraternity'\n");
+	j++;
+}
+void life4()
+{
+	printf("\nHe was awarded Padam Vibhushan,Padma Shri and Padma Bhushan in years 2008,1988 and 2001 resp.\n");
+	j++;
+}
+void life5()
+{
+	printf("\nThis country is famous for Lake Baikal\n");
+	j++;
+}
+void life6()
+{
+	printf("\nIt is the second sailboat of Indian Navy.\n");
+	j++;
+}
+void life7()
+{
+	printf("\nHe was a Hungarian newspaper editor\n");
+	j++;
+}
+void life8()
+{
+	printf("\nMunshi Premchand is famous for his modern Hindi-Urdu literature\n");
+	j++;
+}
+void life9()
+{
+	printf("\nThese temples are the most beautiful among the Jain temples of the world\n");
+	j++;
+}
+void life10()
+{
+	printf("\nThe United Nations tasks to promote international cooperation and to maintain international order\n");
+	j++;
+}
+void life11()
+{
+	printf("\nLord Chelmsford was the viceroy when Rowlatt Act was passed\n");
+	j++;
+}
+void life12()
+{
+	printf("\nThe metal is corrosion resistant and has high melting point\n");
+	j++;
+}
+void life13()
+{
+	printf("\nIt is the third largest Halogen\n");
+	j++;
+}
+void life14()
+{
+	printf("\nIt is the second largest river in Asia\n");
+	j++;
+}
+void life15()
+{
+	printf("\nIt is a white solid that is crystalline\n");
+	j++;
+}
